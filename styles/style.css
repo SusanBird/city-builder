@@ -5,7 +5,7 @@ body {
     --color2: white;
     --color3: white;
     --color4: white;
-    --color5: white;
+    --color5: rgb(0, 33, 71);
 
     /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
 
@@ -36,6 +36,7 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
+    background-color: var(--color5);
 }
 
 section {
@@ -49,13 +50,13 @@ section {
     padding-bottom: var(--gutter);
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
-    border: solid 2px var(--color1);
+    border: solid 5px var(--color1);
 }
 
 header {
     display: flex;
     justify-content: flex-end;
-    background-color: var(--color3);
+    background-color: var(--color5);
     height: var(--header-height);
     box-shadow: var(--shadow);
 }
@@ -84,19 +85,19 @@ footer {
     height: var(--footer-height);
     display: flex;
     justify-content: flex-end;
-    background-color: var(--color3);
+    background-image: var(--color5);
     box-shadow: var(--shadow);
 }
 
 .city-images {
-    height: 500px;
+    height: 100%;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
 }
 
 .city-images img {
-    width: 300px;
-    height: 225px;
+    width: 400px;
+    height: 300px;
 }
 
 section {
@@ -109,6 +110,7 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    background-color: var(--color1);
 }
 .user-inputs > div {
     height: 100%;
