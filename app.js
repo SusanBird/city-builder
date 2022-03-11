@@ -23,3 +23,14 @@ const slogans = [];
   // get user input
   // use user input to update state 
   // update DOM to reflect the new state
+
+
+// slogan button - when input entered then button clicked, input added to array
+addSloganButton.addEventListener('click', () => {
+    //determine what slogan the user typed
+    const citySlogan = sloganInputEl.value;
+    //adding input to array
+    slogans.push(citySlogan);
+
+    sloganInputEl.value = '';
+});
