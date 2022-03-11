@@ -14,6 +14,11 @@ const sloganInputEl = document.getElementById('slogan-input');
 
 // let state
 
+let destinationCount = 0;
+let skylineCount = 0;
+let collegeCount = 0;
+const slogans = [];
+
 // set event listeners 
   // get user input
   // use user input to update state 
