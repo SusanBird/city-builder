@@ -136,3 +136,8 @@ section {
     text-align: center;
     font-style: italic;
 }
+
+.destination {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
