@@ -120,10 +120,10 @@ section {
     display: grid;
     grid-template-rows: 200px 200px 200px 200px 200px;
     background-color: var(--color5);
+    color: var(--color1);
 }
 .user-inputs > div {
     height: 100%;
-    border: solid 1px black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -131,8 +131,8 @@ section {
 }
 
 .slogan {
-    background: pink;
     margin: 5px;
     width: 100%;
     text-align: center;
+    font-style: italic;
 }

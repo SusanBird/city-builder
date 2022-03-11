@@ -90,6 +90,6 @@ collegeDropdown.addEventListener('change', () => {
 
 //create function that creates a text string showing what changes have occurred 
 function displayCountStats() {
-    countMessageEl.textContent = `You changed the destination ${destinationCount} times, the skyline ${skylineCount} times and the college ${collegeCount} times`;
+    countMessageEl.textContent = `You changed the destination ${destinationCount} times, the skyline ${skylineCount} times and the college ${collegeCount} times.`;
 }
 
