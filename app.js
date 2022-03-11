@@ -24,6 +24,11 @@ const slogans = [];
   // use user input to update state 
   // update DOM to reflect the new state
 
+// input for city name
+cityNameInput.addEventListener('input', () => {
+  //   - update the welcome element with the city name typed
+    cityNameEl.textContent = cityNameInput.value;
+});
 
 // slogan button - when input entered then button clicked, input added to array
 addSloganButton.addEventListener('click', () => {
@@ -60,8 +65,8 @@ destinationDropdown.addEventListener('change', () => {
     destinationCount++;
   
   // - destination image changes to what the user chooses
-    destinationImgEl.src = `assets/water-${destinationDropdown.value}.png`;
-    displayCountText();
+    destinationImgEl.src = `assets/destination-${destinationDropdown.value}.png`;
+    displayCountStats();
 });
 
 skylineDropdown.addEventListener('change', () => {
@@ -70,7 +75,7 @@ skylineDropdown.addEventListener('change', () => {
   
   // - skyline image changes to what the user chooses
     skylineImgEl.src = `assets/skyline-${skylineDropdown.value}.png`;
-    displayCountText();
+    displayCountStats();
 });
 
 collegeDropdown.addEventListener('change', () => {
@@ -78,6 +83,12 @@ collegeDropdown.addEventListener('change', () => {
     collegeCount++;
   
   // - college image changes to what the user chooses
-    collegeImgEl.src = `assets/nature-${collegeDropdown.value}.png`;
-    displayCountText();
+    collegeImgEl.src = `assets/college-${collegeDropdown.value}.png`;
+    displayCountStats();
 });
+
+//create function that creates a text string showing what changes have occurred 
+function displayCountStats() {
+    countMessageEl.textContent = `You changed the destination ${destinationCount} times, the skyline ${skylineCount} times and the college ${collegeCount} times`;
+}
+
