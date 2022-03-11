@@ -137,7 +137,16 @@ section {
     font-style: italic;
 }
 
-.destination {
+.explore-city {
+    font-size: 1.7rem;
+}
+
+.counts {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.options {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    font-size: 0.7rem;
 }
