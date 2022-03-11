@@ -32,5 +32,25 @@ addSloganButton.addEventListener('click', () => {
     //adding input to array
     slogans.push(citySlogan);
 
+    displaySlogans();
+
     sloganInputEl.value = '';
 });
+
+function displaySlogans() {
+    //create list of slogans 
+    const listEl = document.getElementById('list');
+
+    //print out list of slogans
+    listEl.textContent = '';
+
+    //every time a new slogan is input, create a new div that displays it
+    for (let slogan of slogans) {
+        const div = document.createElement('div');
+  
+        div.classList.add('slogan');
+        div.textContent = slogan;
+    // add the new slogan to the old list
+        listEl.append(div);
+    }  
+}
