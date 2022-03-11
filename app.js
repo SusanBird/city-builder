@@ -54,3 +54,30 @@ function displaySlogans() {
         listEl.append(div);
     }  
 }
+
+destinationDropdown.addEventListener('change', () => {
+  // - count how many times the destination is changed
+    destinationCount++;
+  
+  // - destination image changes to what the user chooses
+    destinationImgEl.src = `assets/water-${destinationDropdown.value}.png`;
+    displayCountText();
+});
+
+skylineDropdown.addEventListener('change', () => {
+  // - count how many times the skyline is changed
+    skylineCount++;
+  
+  // - skyline image changes to what the user chooses
+    skylineImgEl.src = `assets/skyline-${skylineDropdown.value}.png`;
+    displayCountText();
+});
+
+collegeDropdown.addEventListener('change', () => {
+  // - count how many times the college is changed
+    collegeCount++;
+  
+  // - college image changes to what the user chooses
+    collegeImgEl.src = `assets/nature-${collegeDropdown.value}.png`;
+    displayCountText();
+});
