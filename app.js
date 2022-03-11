@@ -1,6 +1,6 @@
 // import functions and grab DOM elements
-const cityNameInput = document.getElementById('city-name-input');
-const cityNameEl = document.getElementById('city-name');
+const yourNameInput = document.getElementById('your-name-input');
+const yourNameEl = document.getElementById('your-name');
 const destinationDropdown = document.getElementById('destination-dropdown');
 const skylineDropdown = document.getElementById('skyline-dropdown');
 const collegeDropdown = document.getElementById('college-dropdown');
@@ -24,10 +24,10 @@ const slogans = [];
   // use user input to update state 
   // update DOM to reflect the new state
 
-// input for city name
-cityNameInput.addEventListener('input', () => {
-  //   - update the welcome element with the city name typed
-    cityNameEl.textContent = cityNameInput.value;
+// input for user name
+yourNameInput.addEventListener('input', () => {
+  //   - update the welcome element with the user name typed
+    yourNameEl.textContent = yourNameInput.value;
 });
 
 // slogan button - when input entered then button clicked, input added to array
@@ -39,6 +39,7 @@ addSloganButton.addEventListener('click', () => {
 
     displaySlogans();
 
+    //clear current slogan
     sloganInputEl.value = '';
 });
 
