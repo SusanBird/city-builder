@@ -1,15 +1,14 @@
-
 body {
     /* feel free to update these css variables for a quick theme */
-    
+
     --color1: white;
     --color2: white;
     --color3: white;
     --color4: white;
-    --color5: white;
-    
+    --color5: rgb(0, 33, 71);
+
     /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
-        
+
     /* --color1: hsla(349, 69%, 76%, 1);
     --color2: hsla(207, 67%, 44%, 1);
     --color3: hsla(200, 61%, 56%, 1);
@@ -21,14 +20,14 @@ body {
     --color3: hsla(315, 37%, 86%, 1);
     --color4: hsla(45, 73%, 98%, 1);
     --color5: hsla(224, 40%, 79%, 1); */
-    
+
     --header-height: 80px;
-    --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
+    --shadow: 0px 10px 20px -12px rgba(0, 0, 0, 0.45);
     --gutter: 30px;
     --footer-height: 25px;
-    
-    font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+
+    font-family: 'PT Sans', 'Helvetica Neue', Arial, Helvetica;
+    background-color: var(--color5);
 }
 
 main {
@@ -37,11 +36,13 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
+    background-color: var(--color5);
 }
 
 section {
     background-color: var(--color5);
     max-width: 80%;
+    max-height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,21 +51,22 @@ section {
     padding-bottom: var(--gutter);
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
-    border: solid 2px var(--color1);
+    border: solid 5px var(--color1);
 }
 
 header {
     display: flex;
     justify-content: flex-end;
-    background-color: var(--color3);
+    background-color: var(--color5);
     height: var(--header-height);
     box-shadow: var(--shadow);
 }
 
-
-h2 {
-    font-size: 1.8rem;
-    font-weight: bold;
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--color1);
+    height: 900px;
 }
 
 .gutter-right {
@@ -78,7 +80,7 @@ header img {
 p {
     margin: var(--gutter);
 }
-  
+
 footer {
     position: fixed;
     width: 100%;
@@ -86,6 +88,65 @@ footer {
     height: var(--footer-height);
     display: flex;
     justify-content: flex-end;
-    background-color: var(--color3);
+    background-image: var(--color5);
     box-shadow: var(--shadow);
+    background-color: var(--color5);
+}
+
+.city-images {
+    max-height: 980px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 20px;
+    row-gap: 20px;
+}
+
+.city-images img {
+    width: 400px;
+    height: 300px;
+    border-radius: 50px;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    max-height: 1200px;
+}
+
+.user-inputs {
+    height: 100%;
+    max-height: 1000px;
+    display: grid;
+    grid-template-rows: 200px 200px 200px 200px 200px;
+    background-color: var(--color5);
+    color: var(--color1);
+}
+.user-inputs > div {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.slogan {
+    margin: 5px;
+    width: 100%;
+    text-align: center;
+    font-style: italic;
+}
+
+.explore-city {
+    font-size: 1.7rem;
+}
+
+.counts {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.options {
+    display: grid;
+    font-size: 0.7rem;
 }
